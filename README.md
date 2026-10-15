@@ -43,6 +43,14 @@ size, outcome) for usage limits and support, never the question's text or the
 answer. You can disconnect at any time from Claude or
 from your academy's admin panel.
 
+Two other places the plugin can reach, neither of which receives academy data:
+
+- If the connector isn't connected, the kutab-brand skill reads the academy's
+  public branding (name, colours, logo) from the academy's own website, at
+  the address the admin gives, path /api/info.
+- Branded images made from the skill's SVG template load the Cairo font from
+  Google Fonts (fonts.googleapis.com) when they are opened.
+
 ## Support
 
 business@kutab.co · https://kutab.co/support · Privacy: https://kutab.co/privacy
