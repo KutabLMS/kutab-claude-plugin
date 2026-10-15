@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "kutab": {
+      "type": "http",
+      "url": "https://mcp.kutab.co/mcp"
+    }
+  }
+}

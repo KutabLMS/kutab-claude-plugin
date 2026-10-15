@@ -1,0 +1,54 @@
+<!-- Kutab academy card template — 1200×628. Flat, light background, Cairo, 2D vector.
+     Replace the {{TOKENS}} with values from academy_branding / GET /api/info:
+       {{PRIMARY}}   colors.primary        (fallback #527CA5)
+       {{SECONDARY}} colors.secondary      (fallback #A2C1DE)
+       {{INK}}       text/ink              (fallback #142D43)
+       {{BG}}        light ground          (fallback #F6F3ED)
+       {{LOGO}}      assets.logo (URL)     (or drop the <image> and use the name)
+       {{ACADEMY}}   name / appName
+       {{TITLE}}     the headline for this asset
+       {{SUBTITLE}}  one supporting line
+     For Arabic copy add dir="rtl" and set text-anchor="end", x from the right. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="628" viewBox="0 0 1200 628" role="img" aria-label="{{TITLE}}">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700;800&amp;display=swap');
+      :root { --primary:{{PRIMARY}}; --secondary:{{SECONDARY}}; --ink:{{INK}}; --bg:{{BG}}; --white:#FFFFFF; }
+      text { font-family:'Cairo', system-ui, 'Segoe UI', sans-serif; }
+      .h  { font-weight:800; fill:var(--ink); }
+      .s  { font-weight:500; fill:var(--ink); opacity:.72; }
+      .k  { font-weight:700; fill:var(--primary); letter-spacing:.5px; }
+    </style>
+  </defs>
+
+  <!-- light ground -->
+  <rect width="1200" height="628" fill="var(--bg)"/>
+  <!-- soft brand tint, one only -->
+  <circle cx="1140" cy="70" r="360" fill="var(--primary)" opacity="0.06"/>
+
+  <!-- logo (or academy name if no logo) -->
+  <image href="{{LOGO}}" x="72" y="66" height="56" preserveAspectRatio="xMinYMid meet"/>
+
+  <!-- copy, left column -->
+  <text class="k" x="74" y="250" font-size="22">{{ACADEMY}}</text>
+  <text class="h" x="72" y="322" font-size="66">{{TITLE}}</text>
+  <text class="s" x="74" y="382" font-size="27">{{SUBTITLE}}</text>
+
+  <!-- flat 2D vector motif: an open book + a check, in the palette -->
+  <g transform="translate(830 300)">
+    <rect x="-40" y="-120" width="300" height="300" rx="36" fill="var(--primary)" opacity="0.08"/>
+    <!-- book -->
+    <path d="M20 60 L110 40 L110 150 L20 168 Z" fill="var(--primary)"/>
+    <path d="M200 60 L110 40 L110 150 L200 168 Z" fill="var(--secondary)"/>
+    <line x1="110" y1="40" x2="110" y2="150" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+    <!-- check badge -->
+    <circle cx="180" cy="30" r="30" fill="var(--white)" stroke="var(--secondary)" stroke-width="3"/>
+    <path d="M166 30 l10 11 20 -22" fill="none" stroke="var(--secondary)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- sparkle -->
+    <path d="M60 -70 l7 15 15 7 -15 7 -7 15 -7 -15 -15 -7 15 -7 z" fill="var(--secondary)"/>
+  </g>
+
+  <!-- footer rule -->
+  <rect x="72" y="556" width="1056" height="2" fill="var(--ink)" opacity="0.1"/>
+  <text class="s" x="74" y="590" font-size="18">{{ACADEMY}} · on Kutab</text>
+</svg>

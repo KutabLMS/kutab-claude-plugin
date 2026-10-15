@@ -1,0 +1,18 @@
+{
+  "name": "kutab",
+  "displayName": "Kutab",
+  "version": "1.0.0",
+  "description": "Ask your Kutab academy's data questions in plain language: students, lessons, attendance, subscriptions, payments and teachers. Turn the answers into reports, charts and documents in the academy's own brand.",
+  "author": {
+    "name": "Kutab",
+    "url": "https://kutab.co"
+  },
+  "homepage": "https://kutab.co",
+  "repository": "https://github.com/KutabLMS/kutab-claude-plugin",
+  "license": "MIT",
+  "keywords": ["education", "academy", "tutoring", "quran", "reports"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://kutab.co/support",
+  "supportUrl": "https://kutab.co/support",
+  "privacyPolicyUrl": "https://kutab.co/privacy"
+}
