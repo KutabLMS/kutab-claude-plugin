@@ -14,5 +14,6 @@
   "icon": "./assets/icon.png",
   "documentationUrl": "https://kutab.co/support",
   "supportUrl": "https://kutab.co/support",
-  "privacyPolicyUrl": "https://kutab.co/privacy"
+  "privacyPolicyUrl": "https://kutab.co/privacy",
+  "termsOfServiceUrl": "https://kutab.co/terms"
 }
